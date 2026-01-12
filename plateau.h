@@ -1,0 +1,17 @@
+#ifndef PLATEAU_H
+#define PLATEAU_H
+
+class Plateau {
+private:
+    static const int rows = 8;
+    static const int cols = 5;
+    char grid[rows][cols];
+
+public:
+    Plateau();
+    void placerPion(int x, int y, char pion);
+    void afficher() const;
+    char obtenirPion(int x, int y) const;
+};
+
+#endif
