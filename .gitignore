@@ -1,0 +1,4 @@
+*.o
+*.out
+exec
+a.out
