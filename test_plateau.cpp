@@ -11,6 +11,7 @@ int main() {
     assert(!p.placerPion(9, 0, 'X'));
     assert(p.obtenirPion(0, 0) == 'X');
     assert(p.comptePions() == 1);
+    assert(!p.placerPion(0, 0, 'O'));
     p.vider();
     assert(p.comptePions() == 0);
     std::cout << "ok\n";

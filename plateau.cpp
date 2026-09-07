@@ -17,6 +17,9 @@ bool Plateau::placerPion(int x, int y, char pion) {
     if (!dansGrille(x, y)) {
         return false;
     }
+    if (grid[y][x] != '.') {
+        return false;
+    }
     grid[y][x] = pion;
     return true;
 }
