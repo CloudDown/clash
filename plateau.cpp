@@ -9,10 +9,16 @@ Plateau::Plateau() {
     }
 }
 
-void Plateau::placerPion(int x, int y, char pion) {
-    if (x >= 0 && x < cols && y >= 0 && y < rows) {
-        grid[y][x] = pion;
+bool Plateau::dansGrille(int x, int y) const {
+    return x >= 0 && x < cols && y >= 0 && y < rows;
+}
+
+bool Plateau::placerPion(int x, int y, char pion) {
+    if (!dansGrille(x, y)) {
+        return false;
     }
+    grid[y][x] = pion;
+    return true;
 }
 
 void Plateau::afficher() const {
@@ -25,8 +31,8 @@ void Plateau::afficher() const {
 }
 
 char Plateau::obtenirPion(int x, int y) const {
-    if (x >= 0 && x < cols && y >= 0 && y < rows) {
-        return grid[y][x];
+    if (!dansGrille(x, y)) {
+        return '\0';
     }
-    return '\0';
+    return grid[y][x];
 }
