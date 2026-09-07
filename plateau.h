@@ -15,6 +15,8 @@ public:
     char obtenirPion(int x, int y) const;
     void vider();
     int comptePions() const;
+    int largeur() const { return cols; }
+    int hauteur() const { return rows; }
 };
 
 #endif
