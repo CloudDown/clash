@@ -1,4 +1,4 @@
-#include "plateau.cpp"
+#include "plateau.h"
 
 int main() {
     Plateau plateau;
