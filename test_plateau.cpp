@@ -4,6 +4,8 @@
 
 int main() {
     Plateau p;
+    assert(p.largeur() == 5);
+    assert(p.hauteur() == 8);
     assert(p.dansGrille(0, 0));
     assert(!p.dansGrille(-1, 0));
     assert(!p.dansGrille(0, 8));
