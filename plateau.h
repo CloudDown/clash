@@ -14,6 +14,7 @@ public:
     void afficher() const;
     char obtenirPion(int x, int y) const;
     void vider();
+    int comptePions() const;
 };
 
 #endif
