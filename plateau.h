@@ -13,6 +13,7 @@ public:
     bool placerPion(int x, int y, char pion);
     void afficher() const;
     char obtenirPion(int x, int y) const;
+    void vider();
 };
 
 #endif
