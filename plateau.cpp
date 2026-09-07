@@ -22,7 +22,13 @@ bool Plateau::placerPion(int x, int y, char pion) {
 }
 
 void Plateau::afficher() const {
+    std::cout << "  ";
+    for (int j = 0; j < cols; ++j) {
+        std::cout << j << ' ';
+    }
+    std::cout << '\n';
     for (int i = 0; i < rows; ++i) {
+        std::cout << i << ' ';
         for (int j = 0; j < cols; ++j) {
             std::cout << grid[i][j] << ' ';
         }
