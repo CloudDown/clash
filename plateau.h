@@ -9,7 +9,8 @@ private:
 
 public:
     Plateau();
-    void placerPion(int x, int y, char pion);
+    bool dansGrille(int x, int y) const;
+    bool placerPion(int x, int y, char pion);
     void afficher() const;
     char obtenirPion(int x, int y) const;
 };
