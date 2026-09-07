@@ -8,3 +8,5 @@ g++ -o clash main.cpp plateau.cpp
 ```
 
 `main.cpp` includes `plateau.cpp`; keep both files in the same directory.
+
+Personal prototype. No license declared.
