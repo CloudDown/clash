@@ -2,3 +2,5 @@
 *.out
 exec
 a.out
+clash
+test_plateau
